@@ -11,6 +11,8 @@ html body{
     margin: 0;
     font-family: 'Signika', sans-serif;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 /* Navbar Section*/
 
@@ -417,6 +419,88 @@ text-decoration: none;
     line-height: 20px;
 }
 
+/*-- reg1--*/
+.try{
+    height:700px;
+}
+.side{
+    background: #F9FAFB;
+    max-width: 550px;
+    padding-left:135px;
+    padding-top: 150px;
+}
+.side_p{
+    width: 417px;
+}
+.lend-btn{
+    border: 2px solid #FFAB0D;
+    border-radius: 5px;
+    color: #FFAB0D;
+    width: 216px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+.ret{
+    max-width: 549px;
+}
+
+.label{
+    padding: 0;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+input[type=text], input[type=tel], input[type=email], select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+.side2{
+    width: 100px;
+    margin-left: 30px;
+}
+.phone{
+    max-width: 263px;
+}
+.explainer{
+    font-size: 12px;
+}
+.skip{
+    padding-right: 50px;
+    padding-top:30px;
+}
+
+.off{
+    color: #c4c4c4!important;
+    pointer-events: none;
+}
+.skip a{
+    color: #FFAB0D;
+}
+.skip a:hover{
+    border: 2px solid #FFAB0D;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.ray{
+    margin-bottom: 200px;
+}
+.reg{
+    background: #0267C1;
+    margin: 0;
+}
+.socket{
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color:#fff;
+}
 
 /*-- media querry--*/
 
@@ -513,4 +597,22 @@ text-decoration: none;
         padding-bottom: 15px;
         text-align: center;
     }
+/*Reg1*/
+.side{
+    width: 600px;
+    height: 300px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.side2{
+    max-width: 600px;
+    width: 100%;
+    margin-left: 30px;
+}
+.reg{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    left: 0;
+}
 }
