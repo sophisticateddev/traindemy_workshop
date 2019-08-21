@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Traindemy Workshops</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top backg ">
         <div class="container">
-            <a href="index.html"><img src="img/Traindemy-workshop-Horizontal.png" alt="Logo" class="logo"></a>
-            <nav class="topnav">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Workshops</a></li>
-                    <li><a href="#">Become A Trainer</a></li>
-                    <li><a href="#" class="outlined">Login</a></li>
-                    <li><a href="#" class="selected">Get Started</a></li>
+            <a href="#" class="navbar-brand"><img src="img/Traindemy-workshop-Horizontal.png" alt="Traindemy Workshops"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link work">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link train">Become a trainer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active outline">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link button">Get Started  </a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
+    <!-- End Navigation-->
+
+<!-- Hero Section -->
         <div class="hero">
             <div class="hero-text">
                 <h1>Traindemy Workshops</h1>
@@ -34,56 +53,70 @@
             </div>
         </div>
         <div class="wrapper">
-        <div class="filter">
-            <input type="text" placeholder="Autoworkshop" class="det1">
-            <input type="text" placeholder="location" class="det2">
-            <select name="Categories" class="det3">
-                <option value="Arts and craft">Arts and Craft</option>
-                <option value="Agriculture">Agriculture</option>
-                <option value="Engineering">Engineering</option>
-            </select>
-            <button class="search">Search</button>
-        </div>
+            <div class="container">
+            <!--I used 'flex' here to enable items adjust to screen size automatically read more on this-->
+                <div class="filter d-flex flex-wrap">
+                    <input type="text" placeholder="Autoworkshop" class="det1 mr-1">
+                    <input type="text" placeholder="location" class="det2 mr-1">
+                    <select name="Categories" class="det3 mr-1">
+                        <option value="Arts and craft">Arts and Craft</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Engineering">Engineering</option>
+                    </select>
+                    <button class="search">Search</button>
+                </div>
+            </div>
         <div class="main">
             <!--Top workshops-->
             <h2 class="tp">Top Workshops</h2>
-            <div class="tp-cards">
-                <div class="top-workshops">
-                    <img src="img/activity-art-artistic-707193.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
-                    <div class="card-details">
-                        <h5 class="tag">Arts &#8226;<a href="#"><img src="img/maps-and-flags.png" alt=""> Surulere, Lagos</a></h5>
-                        <p class="heading">Tito's Studio </p>
-                        <h5 class="amount">200/day</h5>
+            <!--Row enables you to use columns to specify how the diffetent items should display on different screen sizes-->
+            <div class="row">
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
+                    <div class="top-workshops">
+                        <img src="img/activity-art-artistic-707193.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
+                        <div class="card-details">
+                            <h5 class="tag">Arts &#8226;<a href="#"><img src="img/maps-and-flags.png" alt=""> Surulere, Lagos</a></h5>
+                            <p class="heading">Tito's Studio </p>
+                            <h5 class="amount">200/day</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="top-workshops">
-                    <img src="img/analog-analogue-aperture-1002634.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
-                    <div class="card-details">
-                        <h5 class="tag">photography &#8226; <a href="#"><img src="img/maps-and-flags.png" alt="">Bariga, Lagos</a></h5>
-                        <p class="heading">Jerry's Photography </p>
-                        <h5 class="amount">₦1000/day</h5>
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
+                    <div class="top-workshops">
+                        <img src="img/analog-analogue-aperture-1002634.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
+                        <div class="card-details">
+                            <h5 class="tag">photography &#8226; <a href="#"><img src="img/maps-and-flags.png" alt="">Bariga, Lagos</a></h5>
+                            <p class="heading">Jerry's Photography </p>
+                            <h5 class="amount">₦1000/day</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="top-workshops">
-                    <img src="img/close-up-color-daylight-434537.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
-                    <div class="card-details">
-                        <h5 class="tag">Agriculture &#8226; <a href="#"><img src="img/maps-and-flags.png" alt="">Osun</a></h5>
-                        <p class="heading"> Tolu's Farm </p>
-                        <h5 class="amount">₦800/day</h5>
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
+                    <div class="top-workshops">
+                        <img src="img/close-up-color-daylight-434537.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
+                        <div class="card-details">
+                            <h5 class="tag">Agriculture &#8226; <a href="#"><img src="img/maps-and-flags.png" alt="">Osun</a></h5>
+                            <p class="heading"> Tolu's Farm </p>
+                            <h5 class="amount">₦800/day</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="top-workshops">
-                    <img src="img/apartment-cabinet-contemporary-2062426.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
-                    <div class="card-details">
-                        <h5 class="tag">cooking &#8226; <a href="#"><img src="img/maps-and-flags.png" alt="">Victoria Island, Lagos</a></h5>
-                        <p class="heading">Whole Kitchen-Oven & Dough </p>
-                        <h5 class="amount">₦500/day</h5>
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
+                    <div class="top-workshops">
+                        <img src="img/apartment-cabinet-contemporary-2062426.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
+                        <div class="card-details">
+                            <h5 class="tag">cooking &#8226; <a href="#"><img src="img/maps-and-flags.png" alt="">Victoria Island, Lagos</a></h5>
+                            <p class="heading">Whole Kitchen-Oven & Dough </p>
+                            <h5 class="amount">₦500/day</h5>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--Top workshops-->
             <h2 class="tp">More Workshops To  Pratice Your Skills</h2>
-            <div class="tp-cards">
+            <div class="row">
+                <!--I added columns for responsiveness-->
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/art-art-materials-artwork-1053687.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -92,6 +125,9 @@
                             <h5 class="amount">₦3000/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/backyard-blur-close-up-296230.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -100,6 +136,9 @@
                             <h5 class="amount">R100/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/hammer-hand-tools-measuring-tape-175039.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -108,6 +147,9 @@
                             <h5 class="amount">₦300/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/corn-cropland-crops-96715.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -116,6 +158,9 @@
                             <h5 class="amount">₦600/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/comfort-control-data-213162.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -124,6 +169,9 @@
                             <h5 class="amount">₦3000/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/close-up-energy-equipment-191648.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -132,6 +180,9 @@
                             <h5 class="amount">₦300/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/catch-fish-fish-market-229789.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -140,6 +191,9 @@
                             <h5 class="amount">₦500/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/camera-close-up-device-821749.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -148,6 +202,9 @@
                             <h5 class="amount">₦800/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/broken-builder-carpenter-209235.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -156,6 +213,9 @@
                             <h5 class="amount">₦400/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/baking-eggs-flour-46170.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -164,6 +224,9 @@
                             <h5 class="amount">1000/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/baked-chef-cook-784631.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -172,6 +235,9 @@
                             <h5 class="amount">₦700/day</h5>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-sm-6 mb-3">
                     <div class="top-workshops">
                         <img src="img/animal-animal-photography-blur-422218.jpg" alt="Autoworkshop" style="width: 100%" class="card-img">
                         <div class="card-details">
@@ -180,25 +246,27 @@
                             <h5 class="amount">200/day</h5>
                         </div>
                     </div>
-                        
                 </div>
                 
             </div>
-            <div class="create-workshops">
-                    <h2 class="money">Make Money from Your Tools</h2>
-                    <h3 class="text">Put that tool that has been laying around the hose to good use and make a few bucks</h3>
-                    <button class="workshop">Create my workshop</button>
-            </div>
+        </div>
+
+        <div class="create-workshops">
+                <div class="col-12 text-center">
+                <h2 class="money">Make Money from Your Tools</h2>
+                <h3 class="text">Put that tool that has been laying around the hose to good use and make a few bucks</h3>
+                <button class="workshop">Create my workshop</button>
+                </div>
         </div>
     </div>
     <footer class="app-footer">
         <div class="all-content">
-            <div class="subscribe_section">
-                <p class="sub_text">Be The First To Know About Our New Training And Products</p>
+            <div class="subscribe_section text-center">
+                <p class="sub_text mb-0" >Be The First To Know About Our New Training And Products</p>
                 <p class="sub_text_small">Stay up to date with us</p>
-                <div class="straight">
-                    <input type="text" placeholder="Your Email Address" class="det7">
-                    <button>Subscribe</button>
+                <div class="straight d-flex">
+                    <input type="text" placeholder="Your Email Address" class="det7" >
+                    <button class="we">Subscribe</button>
                 </div>
             </div>
             <div class="footer_details">
@@ -231,10 +299,10 @@
                 <div class="social">
                         <h5 class="footer-heading">Social</h5>
                         <div class="footer-Socials">
-                            <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-                            <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
-                            <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                            <a href="www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                            <a href="www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                            <a href="www.twitter.com" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
+                            <a href="www.instagram.com" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="www.youtube.com" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
                         </div>
                 </div>
             </div>
@@ -245,5 +313,12 @@
 
     </footer>
     <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->
 </body>
 </html>

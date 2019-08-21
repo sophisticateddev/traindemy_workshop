@@ -12,6 +12,49 @@ html body{
     font-family: 'Signika', sans-serif;
     box-sizing: border-box;
 }
+/* Navbar Section*/
+
+.navbar{
+    font-size: 14px;
+    font-weight: normal;
+}
+.navbar-brand img{
+    height: 36px;
+}
+.navbar-nav li{
+    padding-right: 15px;
+}
+.navbar .navbar-nav .nav-link{
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+  color: #FFAB0D !important;
+}
+
+.navbar .navbar-nav .nav-link.button{
+    background: #FFAB0D;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px 16px;
+}
+.navbar .navbar-nav .nav-link.button:hover{
+    background: rgb(243, 160, 6);
+    color: #fff !important;
+}
+.navbar .navbar-nav .nav-link.outline{
+    border:2px solid #FFAB0D;
+    color: #FFAB0D;
+    border-radius: 5px;
+    padding: 7px 20px;
+}
+.navbar .navbar-nav .nav-link.outline:hover{
+    background: #FFAB0D;
+    color: #fff !important;
+}
+.backg{
+    background: #fff;
+}
 
 .container{
     width: 80%;
@@ -26,7 +69,7 @@ html body{
       margin: 0 auto;
   }
 
-header::after{
+/*header::after{
     content: '';
     display: table;
     clear: both;
@@ -73,7 +116,7 @@ nav li .outlined{
     border-radius: 5px;
     padding: 10px 25px;
     color: #FFAB0D
-}
+}*/
 
 
 
@@ -81,6 +124,7 @@ nav li .outlined{
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/dubia.jpg);
     height: 70vh;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,9 +164,7 @@ nav li .outlined{
     background-color: rgb(218, 148, 18);
 }
 .filter{
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: 284px 281px 251px 170px;
+    display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
@@ -147,6 +189,7 @@ nav li .outlined{
 }
 .det3{
     width: 251px;
+    padding-right: 20px;
 }
 .search{
     background-color: #FFAB0D;
@@ -168,7 +211,8 @@ nav li .outlined{
     font-size: 18px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.8);
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 h2{
     font-size: 18px;
@@ -237,6 +281,11 @@ h2{
     width:100%;
     background-image: url(img/Traindemy-banner.png);
     padding: 100px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     
 }
 .money{
@@ -244,17 +293,20 @@ h2{
     font-size: 36px;
     line-height: 44px;
     color: #FFFFFF;
+    width: auto; 
+    padding: 5px;
 }
 .text{
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    width: 469px;
     height: 40px;
     text-align: center;
     margin-top: 4px;
     margin-bottom: 22px;
+    width: auto; 
+    padding: 5px;
 }
 .workshop{
     width: 286px;
@@ -301,13 +353,19 @@ h2{
     height: 50px;
     border: 1px solid #FFFFFF;
     border-radius: 5px 0 0 5px;
-    padding-left: 10px; 
+    padding-left: 10px;
+    background: none!important; 
 }
+.det7::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
 .straight button{
     width: 139px;
     border-radius: 0 5px 5px 0;
     border: none;
     background: #FFAB0D;
+    color:#fff;
+    cursor: pointer;
 }
 .footer_details{
     display: grid;
@@ -341,7 +399,7 @@ h2{
     padding-bottom: 17px;
 }
 .social .footer-heading{
-    padding-bottom: 18px;
+    padding-bottom: 8px;
 }
 footer a svg.svg-inline--fa{
 color: #fff;
@@ -357,4 +415,102 @@ text-decoration: none;
     text-align: end;
     font-size: 16px;
     line-height: 20px;
+}
+
+
+/*-- media querry--*/
+
+@media (max-width:767px){
+    .about{
+        margin-top: 10px 0;
+    }
+    .train{
+        margin-bottom: 10px;
+    }
+    .navbar .navbar-nav .nav-link.button{
+        width: 130px;
+        padding: 9px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .navbar .navbar-nav .nav-link.outline{
+        width: 130px;
+        padding: 9px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .hero-text{
+        width:300px;
+    }
+    .hero-text h1{
+        font-size:  30px;
+        margin-bottom: 10px;
+    }
+    .hero-text p{
+        font-size: 14px;
+        width: auto;
+    }
+    .hero button{
+        padding: 5px 18px;
+        text-align: center;
+        border-radius: 5px;
+        height: 50px;
+        width: 150px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .filter{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        margin-top: 30px;
+    }
+    .det1{
+    margin-bottom: 5px;
+    }
+    .det2{
+        margin-bottom: 5px;
+    }
+    .det3{
+        margin-bottom: 5px;
+    }
+    .search{
+        text-align: center;
+        border-radius: 5px;
+        height: 50px;
+        width: 300px; 
+    }
+    .tp{
+        margin-top: 15px;
+    }
+    .sub_text{
+        width:300px; 
+    }
+    .sub_text_small{
+        font-size:12px !important;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .det7{
+        width: 200px;
+        height: 50px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px 0 0 5px;
+        padding-left: 10px;
+        background: none!important; 
+    }
+    .straight button{
+        width: 100px;
+    }
+    .footer_details{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        padding-top:40px;
+    }
+    .copyright{
+        padding-top: 30px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
 }
