@@ -451,7 +451,7 @@ text-decoration: none;
     margin-bottom: 0;
 }
 
-input[type=text], input[type=tel], input[type=email], select {
+.ret input[type=text], input[type=tel], input[type=email], select {
     width: 100%;
     padding: 10px 20px;
     margin: 5px 0;
@@ -614,5 +614,9 @@ input[type=text], input[type=tel], input[type=email], select {
     bottom: 0;
     right:0;
     left: 0;
+}
+.skip {
+    padding-right: 0px;
+    margin-bottom: 50px;
 }
 }
