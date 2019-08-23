@@ -527,7 +527,7 @@ text-decoration: none;
     resize: none;
 }
 
-/*-- Reg--*/
+/*-- Reg 3--*/
 /*-- Calendar--*/
 .calendar{
     width: 85%;
@@ -599,6 +599,30 @@ list-style-type: none;
     border: 2px solid #FFAB0D;
     border-radius: 50%;
     color: #FFAB0D;
+  }
+/*Reg4*/
+.btn-outline-dark {
+    color: #FFAB0D;
+    border: 1px solid #FFAB0D;
+}
+.btn-outline-dark:hover {
+    color: #white;
+    background: #FFAB0D;
+    border: none;
+}
+table{
+    width: 100%;
+}
+td, th {
+    border: 1px solid #c4c4c4;
+    text-align: left;
+    padding: 8px;
+  }
+  .finish{
+      background: #FFAB0D;
+      color: #FFFFFF!important;
+      padding: 10px;
+      border-radius: 5px;
   }
 
 /*-- media querry--*/
