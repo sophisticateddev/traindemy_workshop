@@ -14,6 +14,9 @@ html body{
     max-width: 100%;
     overflow-x: hidden;
 }
+h6{
+    font-size: 14px;
+}
 /* Navbar Section*/
 
 .navbar{
@@ -526,6 +529,13 @@ text-decoration: none;
 
 /*-- Reg--*/
 /*-- Calendar--*/
+.calendar{
+    width: 85%;
+}
+.line{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
 .calendar ul{
 list-style-type: none;
 }
@@ -557,13 +567,38 @@ list-style-type: none;
       margin: 0;
       padding: 10px 0;
   }
+  .weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+}
   .red{
       color: red;
   }
-  .days{
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      margin-left: 40px;
+  .days {
+    padding: 10px 0;
+    margin: 0;
+  }
+  .days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+.days li .active {
+    padding: 5px;
+    background: #0267C1;
+    color: white !important;
+    border-radius: 50%;
+  }
+.days li .current {
+    padding: 5px;
+    border: 2px solid #FFAB0D;
+    border-radius: 50%;
+    color: #FFAB0D;
   }
 
 /*-- media querry--*/
@@ -682,5 +717,13 @@ list-style-type: none;
 .skip {
     padding-right: 0px;
     margin-bottom: 50px;
+}
+/*-- Reg3 --*/
+.calendar{
+    width: 100%;
+}
+.weekdays li,
+.days li {
+    width:13.1%;
 }
 }
